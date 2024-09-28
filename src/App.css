@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+/* Input.module.css */
+.Input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+  outline: none;
+}
+
+.Input::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+.dark {
+  color: #fff;
+  background-color: #ccc;
+}
